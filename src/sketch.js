@@ -145,87 +145,87 @@ Nếu bạn muốn chơi lại, chỉ cần ấn vào biểu tượng "you win" 
     // Stimulate the enter button, because the coder can't erase the button
     else if(page == 3){
         background(255);
-        rect(345, 30 * N + 75, 50, 30);
-        text('Answer', 350, 30 * N + 93);
-        if(mouseX >= 350 && mouseX <= 400 && mouseY >= (30 * N + 75) && mouseY <= (30 * N + 105) && mouseIsPressed) check();
+        rect(345, 30 * N + 115, 50, 30);
+        text('Answer', 350, 30 * N + 133);
+        if(mouseX >= 350 && mouseX <= 400 && mouseY >= (30 * N + 115) && mouseY <= (30 * N + 145) && mouseIsPressed) check();
         // Stimulate the answer button, because the coder can't erase the button
         if(!isNaN(N) && N != 1){
             if(val[0] == undefined){
                 khoitao();
             }
             if(N >= 2){
-                image(circles, 20, 30 * N + 70, 30, 30);
-                text('=', 60, 30 * N + 90);
+                image(circles, 20, 30 * N + 110, 30, 30);
+                text('=', 60, 30 * N + 130);
                 if(y == false) inputs[0] = createInput('');
-                if(y == false) inputs[0].position(80, 30 * N + 75);
+                if(y == false) inputs[0].position(80, 30 * N + 115);
             }
             if(N >= 3){
-                image(cross, 20, 30 * N + 100, 30, 30);
-                text('=', 60, 30 * N + 120);
+                image(cross, 20, 30 * N + 140, 30, 30);
+                text('=', 60, 30 * N + 160);
                 if(y == false) inputs[1] = createInput('');
-                if(y == false) inputs[1].position(80, 30 * N + 105);
+                if(y == false) inputs[1].position(80, 30 * N + 145);
             }
             if(N >= 4){
-                image(pentagon, 20, 30 * N + 130, 30, 30);
-                text('=', 60, 30 * N + 150);
+                image(pentagon, 20, 30 * N + 170, 30, 30);
+                text('=', 60, 30 * N + 190);
                 if(y == false) inputs[2] = createInput('');
-                if(y == false) inputs[2].position(80, 30 * N + 135);
+                if(y == false) inputs[2].position(80, 30 * N + 175);
             }
             if(N >= 5){
-                image(squares, 20, 30 * N + 160, 30, 30);
-                text('=', 60, 30 * N + 180);
+                image(squares, 20, 30 * N + 200, 30, 30);
+                text('=', 60, 30 * N + 220);
                 if(y == false) inputs[3] = createInput('');
-                if(y == false) inputs[3].position(80, 30 * N + 165);
+                if(y == false) inputs[3].position(80, 30 * N + 205);
             }
             if(N >= 6){
-                image(star, 20, 30 * N + 190, 30, 30);
-                text('=', 60, 30 * N + 210);
+                image(star, 20, 30 * N + 230, 30, 30);
+                text('=', 60, 30 * N + 250);
                 if(y == false) inputs[4] = createInput('');
-                if(y == false) inputs[4].position(80, 30 * N + 195);
+                if(y == false) inputs[4].position(80, 30 * N + 235);
             }
             if(N >= 7){
-                image(hourglass, 20, 30 * N + 220, 30, 30);
-                text('=', 60, 30 * N + 240);
+                image(hourglass, 20, 30 * N + 260, 30, 30);
+                text('=', 60, 30 * N + 280);
                 if(y == false) inputs[5] = createInput('');
-                if(y == false) inputs[5].position(80, 30 * N + 225);
+                if(y == false) inputs[5].position(80, 30 * N + 265);
             }
             if(N >= 8){
-                image(infinity, 20, 30 * N + 250, 30, 30);
-                text('=', 60, 30 * N + 270);
+                image(infinity, 20, 30 * N + 290, 30, 30);
+                text('=', 60, 30 * N + 310);
                 if(y == false) inputs[6] = createInput('');
-                if(y == false) inputs[6].position(80, 30 * N + 255);
+                if(y == false) inputs[6].position(80, 30 * N + 295);
             }
             if(N >= 9){
-                image(minus, 20, 30 * N + 280, 30, 30);
-                text('=', 60, 30 * N + 300);
+                image(minus, 20, 30 * N + 320, 30, 30);
+                text('=', 60, 30 * N + 340);
                 if(y == false) inputs[7] = createInput('');
-                if(y == false) inputs[7].position(80, 30 * N + 285);
+                if(y == false) inputs[7].position(80, 30 * N + 325);
             }
             if(N >= 10){
-                image(triangles, 20, 30 * N + 310, 30, 30);
-                text('=', 60, 30 * N + 330);
+                image(triangles, 20, 30 * N + 350, 30, 30);
+                text('=', 60, 30 * N + 370);
                 if(y == false) inputs[8] = createInput('');
-                if(y == false) inputs[8].position(80, 30 * N + 315);
+                if(y == false) inputs[8].position(80, 30 * N + 355);
             }
         y = true;
     }
     // show the sum of rows + collums
     for(let i = 0; i < N; i++){
-        text(sumcol[i], 60 + 30 * N, 69 + 31 * i);
-        text(sumrow[i], 58 + 30 * i, 70 + 30 * N);
+        text(sumcol[i], 60 + 30 * N, 109 + 31 * i);
+        text(sumrow[i], 58 + 30 * i, 110 + 30 * N);
     }  
     // Appear the icons
     for(let i = 0; i < N; i++){
         for(let j = 0; j < N; j++){
-            if(ind[i][j] == 0) image(circles, 50 + 30 * i, 50 + 30 * j, 30, 30);
-            if(ind[i][j] == 1) image(cross, 50 + 30 * i, 50 + 30 * j, 30, 30);
-            if(ind[i][j] == 2) image(pentagon, 50 + 30 * i, 50 + 30 * j, 30, 30);
-            if(ind[i][j] == 3) image(squares, 50 + 30 * i, 50 + 30 * j, 30, 30);
-            if(ind[i][j] == 4) image(star, 50 + 30 * i, 50 + 30 * j, 30, 30);
-            if(ind[i][j] == 5) image(hourglass, 50 + 30 * i, 50 + 30 * j, 30, 30);
-            if(ind[i][j] == 6) image(infinity, 50 + 30 * i, 50 + 30 * j, 30, 30);
-            if(ind[i][j] == 7) image(minus, 50 + 30 * i, 50 + 30 * j, 30, 30);
-            if(ind[i][j] == 8) image(triangles, 50 + 30 * i, 50 + 30 * j, 30, 30);
+            if(ind[i][j] == 0) image(circles, 50 + 30 * i, 90 + 30 * j, 30, 30);
+            if(ind[i][j] == 1) image(cross, 50 + 30 * i, 90 + 30 * j, 30, 30);
+            if(ind[i][j] == 2) image(pentagon, 50 + 30 * i, 90 + 30 * j, 30, 30);
+            if(ind[i][j] == 3) image(squares, 50 + 30 * i, 90 + 30 * j, 30, 30);
+            if(ind[i][j] == 4) image(star, 50 + 30 * i, 90 + 30 * j, 30, 30);
+            if(ind[i][j] == 5) image(hourglass, 50 + 30 * i, 90 + 30 * j, 30, 30);
+            if(ind[i][j] == 6) image(infinity, 50 + 30 * i, 90 + 30 * j, 30, 30);
+            if(ind[i][j] == 7) image(minus, 50 + 30 * i, 90 + 30 * j, 30, 30);
+            if(ind[i][j] == 8) image(triangles, 50 + 30 * i, 90 + 30 * j, 30, 30);
         }
     }
     // Appear the verdict for the player's answer
@@ -236,10 +236,10 @@ Nếu bạn muốn chơi lại, chỉ cần ấn vào biểu tượng "you win" 
         frame++;
         background(255);
         for(let i = 0; i < N - 1; i++) inputs[i].hide();
-        image(win, 0, 0, 500, 500);
+        image(win, 0, 0, 800, 800);
         N = NaN;
         val[0] = undefined;
-        if(mouseX <= 500 && mouseY <= 500 && mouseIsPressed && frame >= 20){    
+        if(mouseX <= 800 && mouseY <= 800 && mouseIsPressed && frame >= 20){    
             page = 1;
             frame = 0;
         }
@@ -248,10 +248,10 @@ Nếu bạn muốn chơi lại, chỉ cần ấn vào biểu tượng "you win" 
         background(255);
         frame++;
         for(let i = 0; i < N - 1; i++) inputs[i].hide();
-        image(lose, 0, 0, 500, 500);
+        image(lose, 0, 0, 800, 800);
         N = NaN;
         val[0] = undefined;
-        if(mouseX <= 500 && mouseY <= 500 && mouseIsPressed && frame >= 20){   
+        if(mouseX <= 800 && mouseY <= 800 && mouseIsPressed && frame >= 20){   
             page = 1;
             frame = 0;
         }
