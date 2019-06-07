@@ -110,7 +110,7 @@ function draw(){
         background(255);
         push();
         textSize(30);
-        text('Ai thông minh hơn học sinh lớp 5'.toUpperCase(), 100, 30);
+        text('Ai thông minh hơn học sinh lớp 5'.toUpperCase(), 100, 70);
         pop();
         push();
         textSize(15);
@@ -124,24 +124,24 @@ trong đó mỗi ô là 1 trong N - 1 biểu tượng coder đã chọn.
 Khi nào bạn muốn nộp bài, ấn vào chữ "ANSWER".'
 Nếu câu trả lời của bạn sai, chương trình sẽ đưa ra chữ "wrong answer".
 Còn không, chương trình sẽ đưa ra chữ "you win".'
-Nếu bạn muốn chơi lại, chỉ cần ấn vào biểu tượng "you win" hoặc "wrong answer" ở màn hình`, 100, 200);
-        text('Bạn đã sẵn sàng chưa? Nếu bạn đã sẵn sàng, nhấp vào chữ "bắt đầu" ở dưới.', 100, 300);
+Nếu bạn muốn chơi lại, chỉ cần ấn vào biểu tượng "you win" hoặc "wrong answer" ở màn hình`, 100, 240);
+        text('Bạn đã sẵn sàng chưa? Nếu bạn đã sẵn sàng, nhấp vào chữ "bắt đầu" ở dưới.', 100, 340);
         pop();
-        rect(200, 400, 50, 50);
-        text('Bắt đầu', 205, 425);
-        if(mouseX >= 200 && mouseX <= 250 && mouseY >= 400 && mouseY <= 450 && mouseIsPressed) clickpage1();
+        rect(200, 440, 50, 50);
+        text('Bắt đầu', 205, 465);
+        if(mouseX >= 200 && mouseX <= 250 && mouseY >= 440 && mouseY <= 490 && mouseIsPressed) clickpage1();
         // Stimulate the start button, because the coder can't erase the button
     }
     else if(page == 2 && x == false){
         background(255);
-        text('Enter N', 20, 35);
+        text('Enter N', 20, 75);
         inpN = createInput('');
-        inpN.position(70, 20);
+        inpN.position(70, 60);
         x = true;
-        rect(245, 20, 40, 30);
-        text('Enter', 250, 37);
+        rect(245, 60, 40, 30);
+        text('Enter', 250, 77);
     }
-    if(page == 2 && mouseX >= 245 && mouseX <= 285 && mouseY >= 20 && mouseY <= 50 && !isNaN(parseInt(inpN.value())) && parseInt(inpN.value()) > 1 && parseInt(inpN.value()) <= 10 && mouseIsPressed) clickpage2();
+    if(page == 2 && mouseX >= 245 && mouseX <= 285 && mouseY >= 60 && mouseY <= 90 && !isNaN(parseInt(inpN.value())) && parseInt(inpN.value()) > 1 && parseInt(inpN.value()) <= 10 && mouseIsPressed) clickpage2();
     // Stimulate the enter button, because the coder can't erase the button
     else if(page == 3){
         background(255);
