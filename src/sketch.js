@@ -116,10 +116,10 @@ function draw(){
         textSize(15);
         text(`Chào mừng các bạn đến với game ai thông minh hơn học sinh lớp 5.
 Nhiệm vụ của trò chơi này là chứng minh bạn thông minh hơn học sinh lớp 5
-Để làm được điều đó, bạn phải giải được câu đố của chúng tôi.`,100, 70);
+Để làm được điều đó, bạn phải giải được câu đố của chúng tôi.`,100, 110);
         text(`Cho 1 bảng N * N (2 <= N <= 10), N do bạn nhập
 trong đó mỗi ô là 1 trong N - 1 biểu tượng coder đã chọn.
-Ở cuối mỗi hàng/cột là tổng của các biểu tượng đã cho.`, 100, 135);
+Ở cuối mỗi hàng/cột là tổng của các biểu tượng đã cho.`, 100, 175);
         text(`Bạn cần điền giá trị của các biểu tượng vào các ô trống.
 Khi nào bạn muốn nộp bài, ấn vào chữ "ANSWER".'
 Nếu câu trả lời của bạn sai, chương trình sẽ đưa ra chữ "wrong answer".
